@@ -1,16 +1,41 @@
 {
-  "name": "egg-sequelize-plus",
-  "version": "1.0.0",
-  "description": "基于egg-sequelize插件增添数据库动态部署等功能",
-  "eggPlugin": {
-    "name": "sequelizePlus"
+  "_from": "egg-sequelize-plus",
+  "_id": "egg-sequelize-plus@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-umfgGB+J2CZOngN/BTDPFXa3VbWIbn5ul+i1Vv9hJ2VkOT3AXZNw3oScRzRh0WWfJjDe6TXuF1tVfr/cB6qlRA==",
+  "_location": "/egg-sequelize-plus",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "egg-sequelize-plus",
+    "name": "egg-sequelize-plus",
+    "escapedName": "egg-sequelize-plus",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "keywords": [
-    "egg",
-    "eggPlugin",
-    "egg-plugin"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
+  "_resolved": "https://registry.npmjs.org/egg-sequelize-plus/-/egg-sequelize-plus-1.0.1.tgz",
+  "_shasum": "a924bf523995e40e9b85ff475c6434371c42f77d",
+  "_spec": "egg-sequelize-plus",
+  "_where": "C:\\Users\\DUOYI\\Desktop\\github\\egg-plugin\\test01",
+  "author": {
+    "name": "Taylor"
+  },
+  "bugs": {
+    "url": "https://github.com/mmdapl/egg-sequelize-plus/issues"
+  },
+  "bundleDependencies": false,
+  "ci": {
+    "version": "8, 10"
+  },
   "dependencies": {},
+  "deprecated": false,
+  "description": "基于egg-sequelize插件增添数据库动态部署等功能",
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
@@ -21,35 +46,39 @@
     "eslint": "^5.13.0",
     "eslint-config-egg": "^7.1.0"
   },
+  "eggPlugin": {
+    "name": "sequelizePlus"
+  },
   "engines": {
     "node": ">=8.0.0"
-  },
-  "scripts": {
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
-    "test-local": "egg-bin test",
-    "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
-    "pkgfiles": "egg-bin pkgfiles",
-    "autod": "autod"
   },
   "files": [
     "app.js",
     "agent.js",
     "config",
-    "app"
+    "app",
+    "lib"
   ],
-  "ci": {
-    "version": "8, 10"
-  },
+  "homepage": "https://github.com/mmdapl/egg-sequelize-plus#readme",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "license": "MIT",
+  "name": "egg-sequelize-plus",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-sequelize-plus.git"
+    "url": "git+https://github.com/mmdapl/egg-sequelize-plus.git"
   },
-  "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+  "scripts": {
+    "autod": "autod",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "pkgfiles": "egg-bin pkgfiles",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test"
   },
-  "homepage": "https://github.com/eggjs/egg-sequelize-plus#readme",
-  "author": "Taylor",
-  "license": "MIT"
+  "version": "1.0.1"
 }

@@ -8,10 +8,9 @@
  */
 const mysql=require('mysql2');
 module.exports = app => {
-
   // 创建数据库
-  console.log(app.config.sequelize);
-   const { host, port, username, password, database } = app.config.sequelize;
+  console.log('sequelize-plus',app.config.sequelizePlus);
+   const { host, port, username, password, database } = app.config.sequelizePlus;
    new Promise((resolve, reject) => {
    // 建立连接
      const connection = mysql.createConnection({ host, port, user:username, password });
@@ -24,7 +23,6 @@ module.exports = app => {
        // 创建失败
          reject(err);
        }
-
        resolve();
        // 关闭连接
        connection.end();
@@ -32,15 +30,16 @@ module.exports = app => {
    }).then(() => {
      // 创建成功
      app.logger.info('DataBase create success , the name is ' + database);
+     app.logger.info('egg-sequelize-pluse build conection successed ,please begin use it to operate DataBase ');
+    
+     // 参数转换
+     app.config.sequelize=app.config.sequelizePlus;
+     // 加载连接
+      require('./lib/index.js')(app);
    }).catch(error=>{
      // 出现异常
     app.logger.error('DataBase create failed ，check sequelize-plus config carefully ', error);
    });
-   app.logger.info('egg-sequelize-pluse build conection successed ,please begin use it to operate DataBase ');
-    
-   
-   
-   // 加载连接
-    require('./lib/db_loader')(app);
+
 };
 
