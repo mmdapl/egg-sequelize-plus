@@ -1,8 +1,8 @@
 {
   "_from": "egg-sequelize-plus",
-  "_id": "egg-sequelize-plus@1.0.1",
+  "_id": "egg-sequelize-plus@1.0.2",
   "_inBundle": false,
-  "_integrity": "sha512-umfgGB+J2CZOngN/BTDPFXa3VbWIbn5ul+i1Vv9hJ2VkOT3AXZNw3oScRzRh0WWfJjDe6TXuF1tVfr/cB6qlRA==",
+  "_integrity": "sha512-iLLYZ4bOKXqXccVQrUP3TI8SlEkLveZGGd3R0X+FfWI/o3tENLGj6kCNS8s8fEedp7Xbsg8vcuABOTVaQtxf0Q==",
   "_location": "/egg-sequelize-plus",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/egg-sequelize-plus/-/egg-sequelize-plus-1.0.1.tgz",
-  "_shasum": "a924bf523995e40e9b85ff475c6434371c42f77d",
+  "_resolved": "https://registry.npmjs.org/egg-sequelize-plus/-/egg-sequelize-plus-1.0.2.tgz",
+  "_shasum": "107b1a6ebbf2bd5546c1cba9e23d915874028948",
   "_spec": "egg-sequelize-plus",
-  "_where": "C:\\Users\\DUOYI\\Desktop\\github\\egg-plugin\\test01",
+  "_where": "C:\\Users\\DUOYI\\Desktop\\github\\142vip\\test",
   "author": {
     "name": "Taylor"
   },
@@ -35,7 +35,7 @@
   },
   "dependencies": {},
   "deprecated": false,
-  "description": "基于egg-sequelize插件增添数据库动态部署等功能",
+  "description": "基于egg-sequelize插件针对数据库动态部署、连接等功能进行封装，兼容egg-sequelize插件的所有配置和功能，解决egg-sequelize连接数据库无法实现数据库动态部署的痛点，欢迎大家使用和相互交流学习，有问题及时issues",
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
@@ -44,7 +44,9 @@
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
     "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0"
+    "eslint-config-egg": "^7.1.0",
+    "mysql2": "^2.0.0",
+    "sequelize": "^5.21.2"
   },
   "eggPlugin": {
     "name": "sequelizePlus"
@@ -62,8 +64,12 @@
   "homepage": "https://github.com/mmdapl/egg-sequelize-plus#readme",
   "keywords": [
     "egg",
-    "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "egg-sequelize",
+    "egg-sequelize-plus",
+    "database",
+    "egg-mysql",
+    "ORM"
   ],
   "license": "MIT",
   "name": "egg-sequelize-plus",
@@ -80,5 +86,5 @@
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
     "test-local": "egg-bin test"
   },
-  "version": "1.0.1"
+  "version": "1.1.2"
 }
