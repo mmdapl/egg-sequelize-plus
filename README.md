@@ -322,7 +322,8 @@ class PostController extends Controller {  a
 ```
 // {app_root}/app.js
 module.exports = app => {  
-  if (app.config.env === 'local' || app.config.env === 'unittest') {    app.beforeStart(async () => {      
+  if (app.config.env === 'local' || app.config.env === 'unittest') {    
+    app.beforeStart(async () => {      
     await app.model.sync({force: true});    
     });  
 }};
