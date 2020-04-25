@@ -33,7 +33,10 @@
   "ci": {
     "version": "8, 10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.7"
+  },
   "deprecated": false,
   "description": "基于egg-sequelize插件针对数据库动态部署、连接等功能进行封装，兼容egg-sequelize插件的所有配置和功能，解决egg-sequelize连接数据库无法实现数据库动态部署的痛点，欢迎大家使用和相互交流学习，有问题及时issues",
   "devDependencies": {
@@ -86,5 +89,5 @@
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
     "test-local": "egg-bin test"
   },
-  "version": "2.1.0"
+  "version": "2.1.1"
 }
