@@ -22,7 +22,7 @@ module.exports = agent => {
       agent.logger.error('[egg-sequelize-plus] DataBase create failed ，check egg-sequelize-plus config carefully ', err);
     }
     agent.logger.info('[egg-sequelize-plus] DataBase create success , the name is ' + database);
-    agent.logger.info('[egg-sequelize-plus] build conection successed ,please begin use it to operate DataBase ');
+    agent.logger.info('[egg-sequelize-plus] build connection successed ,please begin use it to operate DataBase ');
     // close connection with database
     connection.end();
   });
