@@ -1,6 +1,6 @@
 {
   "_from": "egg-sequelize-plus",
-  "_id": "egg-sequelize-plus@1.0.2",
+  "_id": "egg-sequelize-plus@2.1.2",
   "_inBundle": false,
   "_integrity": "sha512-iLLYZ4bOKXqXccVQrUP3TI8SlEkLveZGGd3R0X+FfWI/o3tENLGj6kCNS8s8fEedp7Xbsg8vcuABOTVaQtxf0Q==",
   "_location": "/egg-sequelize-plus",
@@ -89,5 +89,5 @@
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
     "test-local": "egg-bin test"
   },
-  "version": "2.1.1"
+  "version": "2.1.2"
 }
