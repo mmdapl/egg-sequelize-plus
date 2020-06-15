@@ -1,6 +1,5 @@
 # egg-sequelize-plus
 
-
 <p align="center">
 <a href="https://space.bilibili.com/350937042" target="_blank"><img src="https://img.shields.io/badge/Bilibili-哔哩哔哩-green.svg"></a> 
 <a href="https://142vip.cn" target="_blank"><img src="https://img.shields.io/badge/142vip-个人网站-orange.svg"></a>
@@ -10,8 +9,14 @@
 <a href="https://gitee.com/mmdapl" target="_blank"><img src="https://img.shields.io/badge/gitee-码云-4ed.svg"></a>
 <a href="https://blog.csdn.net/Mmdapl" target="_blank"><img src="https://img.shields.io/badge/csdn-CSDN-8ea.svg"></a>
 
-[![NPM version][npm-image]][npm-url][![Known Vulnerabilities][snyk-image]][snyk-url][![npm download][download-image]][download-url]
+
 </p>
+
+<div style="text-align:center">
+
+[![NPM version][npm-image]][npm-url][![Known Vulnerabilities][snyk-image]][snyk-url][![npm download][download-image]][download-url]
+
+</div>
 
 
 [npm-image]: https://img.shields.io/npm/v/egg-sequelize-plus.svg?style=flat-square
