@@ -2,12 +2,11 @@
 
 /**
  *
- * @description egg-sequelize-plus default config
+ * @description egg-sequelize-plus 默认配置
  * @member Config #sequelize
- * @author Taylor
+ * @author Rong姐姐好可爱
  * @time 2019-11-11
  * @address wuhan
- * @github 2237221210@qq.com
  */
 exports.sequelize = {
   dialect: 'mysql',
@@ -15,7 +14,7 @@ exports.sequelize = {
   host: 'localhost',
   port: 3306,
   username: 'root',
-  password: 'root',
+  password: '123456',
 
   // support customize your own Squelize
   // Sequelize: require('sequelize'), // v5 or v3
