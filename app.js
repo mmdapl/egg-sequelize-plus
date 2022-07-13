@@ -1,8 +1,7 @@
 'use strict';
 /**
  * @description
- * Configure the sequenze parameter and the plug-in starts to call and load
- * @author Taylor
+ * @author Rong姐姐好可爱
  * @time 2019-11-11
  * @address wuhan
  */

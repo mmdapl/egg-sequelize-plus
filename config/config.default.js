@@ -2,7 +2,7 @@
 
 /**
  *
- * @description egg-sequelize-plus default config
+ * @description egg-sequelize-plus 默认配置
  * @member Config #sequelize
  * @author Rong姐姐好可爱
  * @time 2019-11-11
