@@ -2,19 +2,18 @@
 
 /**
  *
- * @description egg-sequelize-plus 默认配置
- * @member Config #sequelize
- * @author Rong姐姐好可爱
+ * @author mmdapl
  * @time 2019-11-11
  * @address wuhan
  */
-exports.sequelize = {
+exports.sequelizePlus = {
   dialect: 'mysql',
-  database: '',
-  host: 'localhost',
-  port: 3306,
-  username: 'root',
-  password: '123456',
+  // connectUri: 'mysql://root@123456@localhost:3306/sequelize_plus',
+  // database: '',
+  // host: 'localhost',
+  // port: 3306,
+  // username: 'root',
+  // password: '123456',
 
   // support customize your own Squelize
   // Sequelize: require('sequelize'), // v5 or v3
@@ -32,4 +31,9 @@ exports.sequelize = {
   //     // other sequelize configurations
   //   },
   // ],
+  // benchmark: true,
+  // define: {
+  //   freezeTableName: false,
+  //   underscored: true,
+  // },
 };
